@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Layout from '../components/layout'
+import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
   const [showChild, setShowChild] = useState(false);
