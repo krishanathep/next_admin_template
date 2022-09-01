@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html>
       <Head>
-        <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Noto+Sans+Thai:wght@300&display=swap" rel="stylesheet"/>
+      <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet"/>
         <link rel="stylesheet" href="assets/plugins/fontawesome-free/css/all.min.css"/>
         <link rel="stylesheet" href="assets/dist/css/adminlte.min.css"/>
       </Head>

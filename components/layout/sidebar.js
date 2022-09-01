@@ -1,4 +1,4 @@
-import React from "react";
+import Link from 'next/link'
 
 export default function sidebar() {
   return (
@@ -27,21 +27,6 @@ export default function sidebar() {
             </a>
           </div>
         </div>
-        <div className="form-inline">
-          <div className="input-group" data-widget="sidebar-search">
-            <input
-              className="form-control form-control-sidebar"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <div className="input-group-append">
-              <button className="btn btn-sidebar">
-                <i className="fas fa-search fa-fw" />
-              </button>
-            </div>
-          </div>
-        </div>
         <nav className="mt-2">
           <ul
             className="nav nav-pills nav-sidebar flex-column"
@@ -50,33 +35,24 @@ export default function sidebar() {
             data-accordion="false"
           >
             <li className="nav-item">
-              <a href="#" className="nav-link">
+              <Link href="/">
+              <a className="nav-link">
                 <i className="nav-icon fas fa-tachometer-alt" />
                 <p>
                   Dashboard
-                  <i className="right fas fa-angle-left" />
                 </p>
               </a>
-              <ul className="nav nav-treeview">
-                <li className="nav-item">
-                  <a href="#" className="nav-link">
-                    <i className="far fa-circle nav-icon" />
-                    <p>Dashboard v1</p>
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a href="#" className="nav-link">
-                    <i className="far fa-circle nav-icon" />
-                    <p>Dashboard v2</p>
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a href="#" className="nav-link">
-                    <i className="far fa-circle nav-icon" />
-                    <p>Dashboard v3</p>
-                  </a>
-                </li>
-              </ul>
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link href="/blank">
+              <a className="nav-link">
+                <i className="nav-icon fas fa-file" />
+                <p>
+                  Blank
+                </p>
+              </a>
+              </Link>
             </li>
             <li className="nav-item">
               <a href="#" className="nav-link">

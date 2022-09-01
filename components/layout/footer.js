@@ -7,8 +7,8 @@ export default function footer() {
         <b>Version</b> 3.2.0
       </div>
       <strong>
-        Copyright © 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.
-      </strong>{" "}
+        Copyright © 2022-2023 <a href="https://adminlte.io">AdminLTE.io</a>.{' '}
+      </strong>
       All rights reserved.
     </footer>
   );
