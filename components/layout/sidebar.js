@@ -1,6 +1,9 @@
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 export default function sidebar() {
+  const router = useRouter();
+  
   return (
     <aside className="main-sidebar sidebar-dark-primary elevation-4">
       <a href="#" className="brand-link">
@@ -36,7 +39,7 @@ export default function sidebar() {
           >
             <li className="nav-item">
               <Link href="/">
-              <a className="nav-link">
+              <a className={router.pathname == "/" ? "nav-link active" : "nav-link"}>
                 <i className="nav-icon fas fa-tachometer-alt" />
                 <p>
                   Dashboard
@@ -46,7 +49,7 @@ export default function sidebar() {
             </li>
             <li className="nav-item">
               <Link href="/blank">
-              <a className="nav-link">
+              <a className={router.pathname == "/blank" ? "nav-link active" : "nav-link"}>
                 <i className="nav-icon fas fa-file" />
                 <p>
                   Blank
