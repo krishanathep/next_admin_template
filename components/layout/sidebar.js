@@ -48,6 +48,28 @@ export default function sidebar() {
               </Link>
             </li>
             <li className="nav-item">
+              <Link href="/repair">
+              <a className={router.pathname == "/repair" ? "nav-link active" : "nav-link"}>
+                <i className="nav-icon fas fa-tools" />
+                <p>
+                  Repair
+                  <span className="right badge badge-danger">New</span>
+                </p>
+              </a>
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link href="/users">
+              <a className={router.pathname == "/users" ? "nav-link active" : "nav-link"}>
+                <i className="nav-icon fas fa-users" />
+                <p>
+                  Users
+                  <span className="right badge badge-danger">New</span>
+                </p>
+              </a>
+              </Link>
+            </li>
+            {/* <li className="nav-item">
               <Link href="/blank">
               <a className={router.pathname == "/blank" ? "nav-link active" : "nav-link"}>
                 <i className="nav-icon fas fa-file" />
@@ -56,45 +78,7 @@ export default function sidebar() {
                 </p>
               </a>
               </Link>
-            </li>
-            <li className="nav-item">
-              <a href="#" className="nav-link">
-                <i className="nav-icon fas fa-th" />
-                <p>
-                  Widgets
-                  <span className="right badge badge-danger">New</span>
-                </p>
-              </a>
-            </li>
-            {/* <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
-              <p>
-                Dashboard
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="../../index.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Dashboard v1</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../../index2.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Dashboard v2</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../../index3.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Dashboard v3</p>
-                </a>
-              </li>
-            </ul>
-          </li> */}
+            </li> */}
           </ul>
         </nav>
       </div>
