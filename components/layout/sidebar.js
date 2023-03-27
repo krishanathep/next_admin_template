@@ -48,6 +48,17 @@ export default function sidebar() {
               </Link>
             </li>
             <li className="nav-item">
+              <Link href="/bookings">
+              <a className={router.pathname == "/bookings" ? "nav-link active" : "nav-link"}>
+                <i className="nav-icon fas fa-calendar" />
+                <p>
+                  Bookings
+                  <span className="right badge badge-success">Cool</span>
+                </p>
+              </a>
+              </Link>
+            </li>
+            <li className="nav-item">
               <Link href="/repair">
               <a className={router.pathname == "/repair" ? "nav-link active" : "nav-link"}>
                 <i className="nav-icon fas fa-tools" />
